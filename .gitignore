@@ -1,0 +1,48 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+ # Bazel build outputs
+ bazel-*
+ bazel-bin/
+ bazel-genfiles/
+ bazel-out/
+ bazel-testlogs/
+ bazel-[a-zA-Z0-9]*/
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.tmp
+*.swp
+*.swo
+*.orig
+- !**/src/main/**/out/
++ out/
+ # External dependencies
+ external/
+
+ # IDE and temp files
+ .idea/
+ *.iml
+ *.log
