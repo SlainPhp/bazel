@@ -1,0 +1,19 @@
+
+module(
+    name = "my-project",
+    version = "0.1.0",
+)
+
+bazel_dep(name = "rules_java", version = "7.0.0")
+
+# Объявление зависимости на локальный модуль
+bazel_dep(
+    name = "my-local-module",
+    version = "0.1.0"  # Должно совпадать с version в my-local-module/MODULE.bazel
+)
+
+# Переопределение пути к локальному модулю
+local_path_override(
+    module_name = "my-local-module",
+    path = "./my-local-module"  # Путь к папке с локальным MODULE.bazel
+)
